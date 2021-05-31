@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "edff1f33-40b3-4def-a15a-8bf7584bc1c0",
+		"name": "Avinash_Lowes_DRF_USERS_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_all_users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_by_id : user 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"2",
+						""
+					]
+				},
+				"description": "pass id in query string to get user"
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_by_id : user 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"2",
+						""
+					]
+				},
+				"description": "pass id in query string to get user"
+			},
+			"response": []
+		},
+		{
+			"name": "Create_User **Mobile number and Email must be unique",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Avinash Kumar\",\n    \"last_name\": \"Gaurav\",\n    \"email\": \"avi@xyz.com\",\n    \"mobile\": 1234567895,\n    \"password\": \"Test@12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				},
+				"description": "MobileName and email must be unique"
+			},
+			"response": []
+		},
+		{
+			"name": "Update_User **Mobile number and Email must be unique",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"first_name\": \"MrAvinash Kumar\",\n    \"last_name\": \"Gaurav\",\n    \"email\": \"nothingtoloose719@xyz.com\",\n    \"mobile\": 8895865683,\n    \"password\": \"Test@12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1",
+						""
+					]
+				},
+				"description": "MobileName and email must be unique"
+			},
+			"response": []
+		},
+		{
+			"name": "Error Case Create_User **Mobile number and Email must be unique Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Avinash Kumar\",\n    \"last_name\": \"Gaurav\",\n    \"email\": \"avi@xyz.com\",\n    \"mobile\": 1234567895,\n    \"password\": \"Test@12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				},
+				"description": "MobileName and email must be unique"
+			},
+			"response": []
+		}
+	]
+}
