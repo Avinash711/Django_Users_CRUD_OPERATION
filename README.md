@@ -3,11 +3,12 @@
 ## * Django Rest Framework: Create Update Delete Users Api *
 
 ### Note** POSTMAN Collection is also added to directly access(first run app)
+### OR Access the UI based view directly from Browser @ link => [Django APP](http://localhost:8000/api/v1/users/) (first run the app)
 
 ## ** Create Virtual Env if not, virtual env is already include as avinash_virtual
 ```
 - [Linux] To activate Virtual env (After cloning the code):
-    - cd folder name
+    - cd folder name (Django_Users_CRUD_OPERATION)
     - source ./avinash_virtual/bin/activate
 ```
 ```
